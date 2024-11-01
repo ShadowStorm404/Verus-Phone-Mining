@@ -11,7 +11,7 @@
 curl -o- -k https://raw.githubusercontent.com/ShadowStorm404/Verus-Phone-Mining/main/install.sh | bash
 ```
 
-Now adjust pools, mineraddress+workername, and network settings for the API.
+Edit the pool address and workers name 
 exit with `<CTRL>-X` followed by `y` and an `<ENTER>`
 ```bash
 nano config.json
