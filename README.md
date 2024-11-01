@@ -2,7 +2,7 @@
 
 ## Installation instructions
 - install Userland app [Click here](/https://github.com/CypherpunkArmory/UserLAnd/releases/download/v2.8.3/app-release.apk)
-- select Ubuntu in Userland and supply your login details.
+- select Ubuntu in Userland and input login details.
 - choose SSH
 - wait for it to install, enter Ubuntu and log into your account
 - Verus can be mined only on 64bit devices
@@ -11,7 +11,7 @@
 curl -o- -k https://raw.githubusercontent.com/ShadowStorm404/Verus-Phone-Mining/main/install.sh | bash
 ```
 
-Edit the pool address and workers name,
+Edit the pool address you want to mine with, wallet address and workers name 
 exit with `<CTRL>-X` followed by `y` and an `<ENTER>`
 ```bash
 nano config.json
@@ -23,6 +23,11 @@ To start mining
 ~/ccminer/start.sh
 ```
 
+## Mining with screen off
+- Pull down the notification panel, click on `Acquire wakelock` Keep in mind not all phones can perform scree off mining
+- If acquire wakelock doesn't work on Huawei Devices, remove powergenie from phone. Unfortunately this is a system app and can only fully uninstalled using Android Debug Bridge
+
+  
 Standard SSH port for Userland is port `2022`.
 Optional: create an entry in your SSH config file for each phone:
 ```
@@ -33,8 +38,6 @@ Host Pixel2XL01
     IdentityFile ~\.ssh\id-rsa_oink-private
 ```
 
-Starting the miner:
-`~/ccminer/start.sh`
 
 Monitoring the miner:
 - `screen -x CCminer`
@@ -42,6 +45,8 @@ Monitoring the miner:
 
 Terminating the miner:
 `screen -X -S CCminer quit`
+
+
 
 ## Monitoring your miners (on a linux host)
 check [MONITORING](/monitoring/MONITORING.md).
