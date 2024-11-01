@@ -1,14 +1,11 @@
 
 
 ## Installation instructions
-- install Userland app (preferably version `2.8.3` from appstore or a downloaded apk) on your Android
+- install Userland app [Click here](/https://github.com/CypherpunkArmory/UserLAnd/releases/download/v2.8.3/app-release.apk)
 - select Ubuntu in Userland and supply your login details.
 - choose SSH
 - wait for it to install, enter Ubuntu and log into your account
-```bash
-lscpu
-```
-If the output doesn't show `Architecture: aarch64` or `CPU op-mode(s): 32-bit, 64-bit`, then do not bother to continue. Your phone is not running a 64-bit OS.
+- Verus can be mined only on 64bit devices
 
 ```bash
 curl -o- -k https://raw.githubusercontent.com/ShadowStorm404/Verus-Phone-Mining/main/install.sh | bash
