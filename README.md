@@ -1,4 +1,4 @@
-# Android-Mining
+# Android-Mining fork from Oink
 Quick installation of mining on Android Phones
 
 ## Github cloning and customizing
