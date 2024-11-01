@@ -11,23 +11,32 @@
 curl -o- -k https://raw.githubusercontent.com/ShadowStorm404/Verus-Phone-Mining/main/install.sh | bash
 ```
 
+
+## Usage
+
 Edit the pool address you want to mine with, wallet address and workers name 
 exit with `<CTRL>-X` followed by `y` and an `<ENTER>`
 ```bash
-nano config.json
+nano ~/ccminer/config.json
 ```
 
-## Usage:
 To start mining
 ```bash
 ~/ccminer/start.sh
 ```
 
+Monitoring the miner:
+- `screen -x CCminer`
+- exit with `CTRL-a` key combination followed by `d`.
+
+Terminating the miner:
+`screen -X -S CCminer quit`
+
 ## Mining with screen off
 - Pull down the notification panel, click on `Acquire wakelock` Keep in mind not all phones can perform scree off mining
 - If acquire wakelock doesn't work on Huawei Devices, remove powergenie from phone. Unfortunately this is a system app and can only fully uninstalled using Android Debug Bridge
 
-  
+## SSH  
 Standard SSH port for Userland is port `2022`.
 Optional: create an entry in your SSH config file for each phone:
 ```
@@ -37,15 +46,6 @@ Host Pixel2XL01
     User Pixel2XL01
     IdentityFile ~\.ssh\id-rsa_oink-private
 ```
-
-
-Monitoring the miner:
-- `screen -x CCminer`
-- exit with `CTRL-a` key combination followed by `d`.
-
-Terminating the miner:
-`screen -X -S CCminer quit`
-
 
 
 ## Monitoring your miners (on a linux host)
