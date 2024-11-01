@@ -26,7 +26,9 @@ To start mining
 ```
 
 Monitoring the miner:
-- `screen -x CCminer`
+```bash
+screen -x CCminer
+```
 - exit with `CTRL-a` key combination followed by `d`.
 
 Terminating the miner:
@@ -54,3 +56,4 @@ check [MONITORING](/monitoring/MONITORING.md).
 WARNING: The scripts installs Oink's public SSH key. You may want to remove that from your `~/.ssh/authorized_keys` file and replace it with your own for passwordless access.
 
 ### Use at your own risk!!!
+
