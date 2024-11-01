@@ -2,7 +2,7 @@
 	"pools":[
 	{
 		"name": "Verus",
-        "url": "ro.vipor.net:5040",
+        "url": "stratum+tcp://ro.vipor.net:5040",
 		"timeout": 150,
 		"disabled": 0
 	}],
